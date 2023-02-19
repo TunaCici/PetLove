@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/textViewLoginWelcome2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/bloggersans_bold"
+        android:text="@string/petlove"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewLoginWelcome"
+        app:layout_constraintStart_toStartOf="@+id/textViewLoginWelcome"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLoginWelcome" />
+
+    <TextView
+        android:id="@+id/textViewLoginWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/bloggersans_bold"
+        android:text="@string/welcome_to"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/gifImageView"
+        app:layout_constraintStart_toStartOf="@+id/gifImageView"
+        app:layout_constraintTop_toBottomOf="@+id/gifImageView" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="158dp"
+        android:layout_height="158dp"
+        android:layout_marginTop="108dp"
+        android:background="#fff"
+        android:src="@drawable/dog_animated"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailFieldSigin"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="256dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:hint="@string/email"
+        app:layout_constraintEnd_toEndOf="@+id/textViewLoginWelcome2"
+        app:layout_constraintStart_toStartOf="@+id/textViewLoginWelcome2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLoginWelcome2"
+        app:startIconDrawable="@drawable/email_color">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailFieldSiginEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordFieldSigin"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="256dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/password"
+        app:endIconMode="password_toggle"
+        app:layout_constraintEnd_toEndOf="@+id/emailFieldSigin"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/emailFieldSigin"
+        app:layout_constraintTop_toBottomOf="@+id/emailFieldSigin"
+        app:startIconDrawable="@drawable/key_color">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordFieldSiginEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/textButtonLogin"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/sign_in"
+        app:layout_constraintEnd_toEndOf="@+id/passwordFieldSigin"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/passwordFieldSigin"
+        app:layout_constraintTop_toBottomOf="@+id/passwordFieldSigin" />
+
+    <Button
+        android:id="@+id/textButtonLogin2"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/create_and_account"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textButtonLogin"
+        app:layout_constraintStart_toStartOf="@+id/textButtonLogin"
+        app:layout_constraintTop_toBottomOf="@+id/textButtonLogin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

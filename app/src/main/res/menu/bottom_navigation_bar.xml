@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/btnHome"
+        android:enabled="true"
+        android:icon="@drawable/home_black"
+        android:title="Home"/>
+    <item
+        android:id="@+id/btnMap"
+        android:enabled="true"
+        android:icon="@drawable/map_black"
+        android:title="Map"/>
+    <item
+        android:id="@+id/btnDoc"
+        android:enabled="true"
+        android:icon="@drawable/doc_black"
+        android:title="Veterinary"/>
+    <item
+        android:id="@+id/btnProfile"
+        android:enabled="true"
+        android:icon="@drawable/profile_black"
+        android:title="Profiles"/>
+    <item
+        android:id="@+id/btnSettings"
+        android:enabled="true"
+        android:icon="@drawable/settings_black"
+        android:title="Settings"/>
+</menu>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/textViewRegisterWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/bloggersans_bold"
+        android:text="@string/register"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="@+id/gifImageView"
+        app:layout_constraintStart_toStartOf="@+id/gifImageView"
+        app:layout_constraintTop_toBottomOf="@+id/gifImageView" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="158dp"
+        android:layout_height="158dp"
+        android:layout_marginTop="72dp"
+        android:background="#fff"
+        android:src="@drawable/dog_animated3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nameFieldRegister"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="256dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="24dp"
+        android:hint="@string/name"
+        app:layout_constraintEnd_toEndOf="@+id/textViewRegisterWelcome"
+        app:layout_constraintStart_toStartOf="@+id/textViewRegisterWelcome"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRegisterWelcome"
+        app:startIconDrawable="@drawable/person_color">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nameFieldRegisterEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailFieldRegister"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="256dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/email"
+        app:layout_constraintEnd_toEndOf="@+id/nameFieldRegister"
+        app:layout_constraintStart_toStartOf="@+id/nameFieldRegister"
+        app:layout_constraintTop_toBottomOf="@+id/nameFieldRegister"
+        app:startIconDrawable="@drawable/email_color">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailFieldRegisterEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordFieldRegister"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="256dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/password"
+        app:endIconMode="password_toggle"
+        app:layout_constraintEnd_toEndOf="@+id/emailFieldRegister"
+        app:layout_constraintStart_toStartOf="@+id/emailFieldRegister"
+        app:layout_constraintTop_toBottomOf="@+id/emailFieldRegister"
+        app:startIconDrawable="@drawable/key_color">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordFieldRegisterEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordFieldRegister2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="256dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/confirm_password"
+        app:endIconMode="password_toggle"
+        app:layout_constraintEnd_toEndOf="@+id/passwordFieldRegister"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/passwordFieldRegister"
+        app:layout_constraintTop_toBottomOf="@+id/passwordFieldRegister"
+        app:startIconDrawable="@drawable/key_color">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordFieldRegisterEdit2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/textButtonLogin"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/register"
+        app:layout_constraintEnd_toEndOf="@+id/passwordFieldRegister2"
+        app:layout_constraintStart_toStartOf="@+id/passwordFieldRegister2"
+        app:layout_constraintTop_toBottomOf="@+id/passwordFieldRegister2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
