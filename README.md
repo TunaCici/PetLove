@@ -160,7 +160,7 @@ After you have logged in, you can navigate between different activities.
 
 ![Different Activities](data/veterinary.png)
 
-The right-most activity, TODO, is where you can sign out from your account. There is also a button that sends a simple notification. It is nothing big, just a simple notification >.<
+The right-most activity, Settings, is where you can sign out from your account. There is also a button that sends a simple notification. It is nothing big, just a simple notification >.<
 
 ![Notification](data/notification.png)
 
